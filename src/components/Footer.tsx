@@ -1,5 +1,5 @@
 import { Wine, Facebook, Instagram, Twitter, Heart } from "lucide-react";
-import barSetup from "/images/footer/setup.png";
+import barSetup from "/HummingbirdMobileSips/images/footer/setup.png";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();

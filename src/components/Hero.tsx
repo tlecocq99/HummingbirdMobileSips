@@ -1,5 +1,5 @@
 import { ChevronDown, Star, Users, Calendar } from "lucide-react";
-const actionShot = "/images/hero/hero.png";
+const actionShot = "/HummingbirdMobileSips/images/hero/hero.png";
 
 const Hero = () => {
   return (

@@ -1,6 +1,6 @@
 import { Award, Clock, Heart, Sparkles } from "lucide-react";
 // Use a public folder path for the image
-const cucumberDrink = "/images/about/cucumber-drink.png";
+const cucumberDrink = "/HummingbirdMobileSips/images/about/cucumber-drink.png";
 const About = () => {
   const achievements = [
     {
