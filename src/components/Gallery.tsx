@@ -1,42 +1,42 @@
-import React, { useState } from 'react';
-import { X } from 'lucide-react';
+import React, { useState } from "react";
+import { X } from "lucide-react";
 
 const Gallery = () => {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
 
   const images = [
     {
-      src: "https://images.pexels.com/photos/1055272/pexels-photo-1055272.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-      alt: "Elegant cocktail presentation"
+      URL: "/HummingbirdMobileSips/images/gallery/lavcocktail.png",
+      alt: "Elegant cocktail presentation",
     },
     {
-      src: "https://images.pexels.com/photos/1540319/pexels-photo-1540319.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-      alt: "Professional bartender at work"
+      URL: "/HummingbirdMobileSips/images/gallery/heartcake.png",
+      alt: "Professional bartender at work",
     },
     {
-      src: "https://images.pexels.com/photos/1267320/pexels-photo-1267320.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-      alt: "Craft cocktails with garnishes"
+      URL: "/HummingbirdMobileSips/images/gallery/ofash.png",
+      alt: "Craft cocktails with garnishes",
     },
     {
-      src: "https://images.pexels.com/photos/2480077/pexels-photo-2480077.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-      alt: "Mobile bar setup"
+      URL: "/HummingbirdMobileSips/images/gallery/bar.png",
+      alt: "Mobile bar setup",
     },
     {
-      src: "https://images.pexels.com/photos/1170621/pexels-photo-1170621.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-      alt: "Colorful cocktail selection"
+      URL: "/HummingbirdMobileSips/images/gallery/peach.png",
+      alt: "Colorful cocktail selection",
     },
     {
-      src: "https://images.pexels.com/photos/1251175/pexels-photo-1251175.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-      alt: "Premium spirits collection"
+      URL: "/HummingbirdMobileSips/images/gallery/multiFlowerCake.png",
+      alt: "Premium spirits collection",
     },
     {
-      src: "https://images.pexels.com/photos/1540406/pexels-photo-1540406.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-      alt: "Wedding cocktail service"
+      URL: "/HummingbirdMobileSips/images/gallery/flowerCake.png",
+      alt: "Wedding cocktail service",
     },
     {
-      src: "https://images.pexels.com/photos/2480077/pexels-photo-2480077.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-      alt: "Event bartending setup"
-    }
+      URL: "/HummingbirdMobileSips/images/about/cucumber-drink.png",
+      alt: "Event bartending setup",
+    },
   ];
 
   return (
@@ -48,8 +48,8 @@ const Gallery = () => {
             Our Work
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Take a look at some of our recent events and the beautiful cocktails we've crafted 
-            for celebrations just like yours.
+            Take a look at some of our recent events and the beautiful cocktails
+            we've crafted for celebrations just like yours.
           </p>
         </div>
 
@@ -59,10 +59,10 @@ const Gallery = () => {
             <div
               key={index}
               className="relative group cursor-pointer overflow-hidden rounded-xl"
-              onClick={() => setSelectedImage(image.src)}
+              onClick={() => setSelectedImage(image.URL ?? image.src ?? null)}
             >
               <img
-                src={image.src}
+                src={image.URL ?? image.src}
                 alt={image.alt}
                 className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-110"
               />
