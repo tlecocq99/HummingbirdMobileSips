@@ -59,10 +59,10 @@ const Gallery = () => {
             <div
               key={index}
               className="relative group cursor-pointer overflow-hidden rounded-xl"
-              onClick={() => setSelectedImage(image.URL ?? image.src ?? null)}
+              onClick={() => setSelectedImage(image.URL ?? null)}
             >
               <img
-                src={image.URL ?? image.src}
+                src={image.URL ?? null}
                 alt={image.alt}
                 className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-110"
               />
