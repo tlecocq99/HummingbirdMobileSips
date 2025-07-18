@@ -27,7 +27,7 @@ const Footer = () => {
       <div
         className="absolute inset-0"
         style={{
-          backgroundImage: `url(${barSetup})`,
+          backgroundImage: `url("/HummingbirdMobileSips/images/footer/setup.png")`,
           backgroundSize: "cover",
           backgroundPosition: "center",
           backgroundRepeat: "no-repeat",
@@ -43,7 +43,7 @@ const Footer = () => {
             {/* Company Info */}
             <div className="lg:col-span-2">
               <div className="flex items-center space-x-2 mb-4">
-                <Wine className="h-8 w-8 text-purple-500" />
+                <Wine className="h-8 w-8 text-[rgb(152,130,161)]" />
                 <span className="text-2xl font-bold text-purple-500">
                   Hummingbird Mobile Sips
                 </span>

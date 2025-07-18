@@ -89,10 +89,7 @@ const Services = () => {
   ];
 
   return (
-    <section
-      id="services"
-      className="py-20 bg-gradient-to-b from-pink-50/20 via-gray-50/60 to-gray-50"
-    >
+    <section id="services" className="py-20 bg-[#EEEADF] text-slate-800">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-16">
@@ -120,7 +117,7 @@ const Services = () => {
             </div>
           ))}
         </div>
-        s{/* Packages */}
+        {/* Packages */}
         <div className="text-center mb-12">
           <h3 className="text-3xl md:text-4xl font-bold text-slate-800 mb-4">
             Event Packages
